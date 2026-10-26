@@ -9,7 +9,13 @@ import requests
 USERNAME = os.environ.get("LEETCODE_USERNAME", "23F9oGHWpJ")
 QUERY = """
 query($u: String!) {
-  matchedUser(username: $u) { userCalendar { submissionCalendar } }
+  allQuestionsCount { difficulty count }
+  matchedUser(username: $u) {
+    submitStatsGlobal {
+      acSubmissionNum { difficulty count submissions }
+    }
+    userCalendar { submissionCalendar streak totalActiveDays }
+  }
 }"""
 
 
@@ -21,10 +27,25 @@ def main() -> None:
         timeout=30,
     )
     r.raise_for_status()
-    user = r.json()["data"]["matchedUser"]
+    payload = r.json()["data"]
+    user = payload["matchedUser"]
     if not user:
         raise SystemExit(f"không tìm thấy user LeetCode: {USERNAME}")
-    raw = json.loads(user["userCalendar"]["submissionCalendar"])
+
+    totals_map = {item["difficulty"]: item["count"] for item in payload.get("allQuestionsCount") or []}
+    ac_list = (user.get("submitStatsGlobal") or {}).get("acSubmissionNum") or []
+    solved_map = {item["difficulty"]: item["count"] for item in ac_list}
+    submissions_map = {item["difficulty"]: item.get("submissions", 0) for item in ac_list}
+
+    problems = {
+        "all": {"solved": solved_map.get("All", 0), "total": totals_map.get("All", 0), "submissions": submissions_map.get("All", 0)},
+        "easy": {"solved": solved_map.get("Easy", 0), "total": totals_map.get("Easy", 0), "submissions": submissions_map.get("Easy", 0)},
+        "medium": {"solved": solved_map.get("Medium", 0), "total": totals_map.get("Medium", 0), "submissions": submissions_map.get("Medium", 0)},
+        "hard": {"solved": solved_map.get("Hard", 0), "total": totals_map.get("Hard", 0), "submissions": submissions_map.get("Hard", 0)},
+    }
+
+    cal = user.get("userCalendar") or {}
+    raw = json.loads(cal.get("submissionCalendar") or "{}")
 
     # khoá là mốc thời gian UTC (giây), giá trị là số lần nộp trong ngày đó
     by_date = {}
@@ -65,16 +86,19 @@ def main() -> None:
         "username": USERNAME,
         "fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "total": total,
+        "total_active_days": cal.get("totalActiveDays", sum(1 for d in days if d["count"] > 0)),
         "best_day": {"date": best["date"], "count": best["count"]},
         "current_streak": current,
         "longest_streak": longest,
+        "problems": problems,
         "monthly": monthly,
         "days": days,
     }
     os.makedirs("data", exist_ok=True)
     with open("data/contributions.json", "w") as f:
         json.dump(out, f, indent=1)
-    print(f"wrote data/contributions.json — {total} submissions across {len(days)} days")
+    p_all = problems["all"]["solved"]
+    print(f"wrote data/contributions.json — {p_all} solved ({problems['easy']['solved']}E/{problems['medium']['solved']}M/{problems['hard']['solved']}H), {total} submissions across {len(days)} days")
 
 
 if __name__ == "__main__":

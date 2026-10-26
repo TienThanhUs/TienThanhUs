@@ -2,12 +2,35 @@
  "username": "23F9oGHWpJ",
  "fetched_at": "2026-10-26T11:11:59+00:00",
  "total": 379,
+ "total_active_days": 77,
  "best_day": {
   "date": "2026-06-14",
   "count": 21
  },
  "current_streak": 2,
  "longest_streak": 19,
+ "problems": {
+  "all": {
+   "solved": 102,
+   "total": 4095,
+   "submissions": 274
+  },
+  "easy": {
+   "solved": 37,
+   "total": 974,
+   "submissions": 91
+  },
+  "medium": {
+   "solved": 59,
+   "total": 2135,
+   "submissions": 145
+  },
+  "hard": {
+   "solved": 6,
+   "total": 986,
+   "submissions": 38
+  }
+ },
  "monthly": {
   "2025-10": 0,
   "2025-11": 0,

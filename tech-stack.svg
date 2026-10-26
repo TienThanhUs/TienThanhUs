@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="908" height="192" viewBox="0 0 908 192" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12">
+<style>.row{opacity:0;transform:translateY(6px);animation:fade .45s ease-out forwards}@keyframes fade{to{opacity:1;transform:none}}</style>
+<rect x="0.5" y="0.5" width="907" height="191" rx="8" fill="#0d1117" stroke="#30363d"/>
+<circle cx="22" cy="20" r="6" fill="#ff5f57"/><circle cx="42" cy="20" r="6" fill="#febc2e"/><circle cx="62" cy="20" r="6" fill="#28c840"/>
+<text x="454" y="24" text-anchor="middle" fill="#8b949e" font-size="13">TienThanhUs@github — ~/tech-stack</text>
+<line x1="1" y1="38" x2="907" y2="38" stroke="#30363d"/>
+<g class="row" style="animation-delay:0.15s">
+<text x="24" y="80" fill="#58a6ff" font-size="11" font-weight="700">▸ LANGUAGES</text>
+<rect x="215" y="62" width="56" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="228" cy="76" r="4.5" fill="#00599C"/>
+<text x="239" y="80" fill="#f0f6fc" font-size="12" font-weight="600">C++</text>
+<rect x="281" y="62" width="64" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="294" cy="76" r="4.5" fill="#f89820"/>
+<text x="305" y="80" fill="#f0f6fc" font-size="12" font-weight="600">Java</text>
+<rect x="355" y="62" width="110" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="368" cy="76" r="4.5" fill="#f7df1e"/>
+<text x="379" y="80" fill="#f0f6fc" font-size="12" font-weight="600">JavaScript</text>
+<rect x="475" y="62" width="56" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="488" cy="76" r="4.5" fill="#336791"/>
+<text x="499" y="80" fill="#f0f6fc" font-size="12" font-weight="600">SQL</text>
+<rect x="541" y="62" width="125" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="554" cy="76" r="4.5" fill="#e34f26"/>
+<text x="565" y="80" fill="#f0f6fc" font-size="12" font-weight="600">HTML5 / CSS3</text>
+</g>
+<g class="row" style="animation-delay:0.29s">
+<text x="24" y="124" fill="#39d353" font-size="11" font-weight="700">▸ BACKEND &amp; FRAMEWORKS</text>
+<rect x="215" y="106" width="117" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="228" cy="120" r="4.5" fill="#6db33f"/>
+<text x="239" y="124" fill="#f0f6fc" font-size="12" font-weight="600">Spring Boot</text>
+<rect x="342" y="106" width="148" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="355" cy="120" r="4.5" fill="#6db33f"/>
+<text x="366" y="124" fill="#f0f6fc" font-size="12" font-weight="600">Spring Security</text>
+<rect x="500" y="106" width="117" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="513" cy="120" r="4.5" fill="#39d353"/>
+<text x="524" y="124" fill="#f0f6fc" font-size="12" font-weight="600">RESTful API</text>
+<rect x="627" y="106" width="94" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="640" cy="120" r="4.5" fill="#d63aff"/>
+<text x="651" y="124" fill="#f0f6fc" font-size="12" font-weight="600">JWT Auth</text>
+<rect x="731" y="106" width="148" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="744" cy="120" r="4.5" fill="#bcae79"/>
+<text x="755" y="124" fill="#f0f6fc" font-size="12" font-weight="600">JPA / Hibernate</text>
+</g>
+<g class="row" style="animation-delay:0.43s">
+<text x="24" y="168" fill="#ffa657" font-size="11" font-weight="700">▸ DEVOPS, DB &amp; TOOLS</text>
+<rect x="215" y="150" width="79" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="228" cy="164" r="4.5" fill="#2496ed"/>
+<text x="239" y="168" fill="#f0f6fc" font-size="12" font-weight="600">Docker</text>
+<rect x="304" y="150" width="170" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="317" cy="164" r="4.5" fill="#4479a1"/>
+<text x="328" y="168" fill="#f0f6fc" font-size="12" font-weight="600">MySQL / PostgreSQL</text>
+<rect x="484" y="150" width="125" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="497" cy="164" r="4.5" fill="#f05032"/>
+<text x="508" y="168" fill="#f0f6fc" font-size="12" font-weight="600">Git &amp; GitHub</text>
+<rect x="619" y="150" width="72" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="632" cy="164" r="4.5" fill="#c71a36"/>
+<text x="643" y="168" fill="#f0f6fc" font-size="12" font-weight="600">Maven</text>
+<rect x="701" y="150" width="148" height="28" rx="6" fill="#161b22" stroke="#30363d"/>
+<circle cx="714" cy="164" r="4.5" fill="#ff6c37"/>
+<text x="725" y="168" fill="#f0f6fc" font-size="12" font-weight="600">Linux / Postman</text>
+</g>
+</svg>

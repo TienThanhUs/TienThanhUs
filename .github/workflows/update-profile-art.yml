@@ -20,7 +20,8 @@ jobs:
         env:
           LEETCODE_USERNAME: 23F9oGHWpJ
       - run: python scripts/render_heatmap_svg.py
+      - run: python scripts/make_tech_stack.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          file_pattern: "data/contributions.json contrib-heatmap.svg tech-stack.svg"
