@@ -16,9 +16,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r scripts/requirements.txt
-      - run: python scripts/fetch_contributions.py
+      - run: python scripts/fetch_leetcode.py
         env:
-          GITHUB_USERNAME: TienThanhUs
+          LEETCODE_USERNAME: 23F9oGHWpJ
       - run: python scripts/render_heatmap_svg.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
