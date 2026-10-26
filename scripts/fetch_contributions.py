@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 
 import os
 
-USERNAME = os.environ.get("GITHUB_USERNAME", "octocat")
+USERNAME = os.environ.get("GITHUB_USERNAME", "TienThanhUs")
 URL = f"https://github.com/users/{USERNAME}/contributions"
 
 

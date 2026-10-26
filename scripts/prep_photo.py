@@ -8,7 +8,7 @@ Usage: python scripts/prep_photo.py <photo.jpg> [--head-frac 1.0]
 Writes source-prepped.png next to the scripts dir's parent.
 """
 import sys
-
+from rembg import remove, new_session
 import cv2
 import numpy as np
 from PIL import Image
@@ -24,8 +24,7 @@ def main() -> None:
         head_frac = float(sys.argv[sys.argv.index("--head-frac") + 1])
 
     img = Image.open(src).convert("RGBA")
-    cut = remove(img)  # RGBA with transparent background
-
+    cut = remove(img, session=new_session("u2net_human_seg"))
     alpha = np.array(cut)[:, :, 3]
     ys, xs = np.where(alpha > 20)
     x0, x1 = xs.min(), xs.max()

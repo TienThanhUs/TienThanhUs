@@ -21,20 +21,20 @@ W = 560
 LINE_H = 27
 STAGGER = 0.28
 
-TITLE = "you@github"
+TITLE = "TienThanhUs@github"
 ROWS = [
     ("", ""),
-    ("Name", "Your Name"),
-    ("Location", "Your City"),
-    ("Role", "What you do"),
+    ("Name", "Nguyen Tien Thanh"),
+    ("Location", "Ho Chi Minh City"),
+    ("Role", "Software Engineering student"),
     ("", ""),
-    ("Built", "Your best project, one line"),
-    ("Also", "Other things you make"),
+    ("Built", "FlashMart-API (Spring Boot, JWT)"),
     ("", ""),
-    ("Stack", "Your tools"),
-    ("Focus", "What drives you"),
+    ("Stack", "C++, Java, Spring Boot, JWT, Docker"),
+    ("", "HTML, CSS, JS"),
+    ("Focus", "Backend development"),
     ("", ""),
-    ("Contact", "you@example.com"),
+    ("Contact", "tthanhtapcode2k6@gmail.com"),
 ]
 PALETTE = ["#ff7b72", "#ffa657", "#d29922", "#39d353", "#58a6ff", "#bc8cff", "#f778ba", "#c9d1d9"]
 
