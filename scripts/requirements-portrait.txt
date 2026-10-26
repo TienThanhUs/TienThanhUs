@@ -1,0 +1,6 @@
+# portrait pipeline only — run locally when the photo changes, not in CI
+pillow
+numpy
+opencv-python-headless
+rembg
+onnxruntime
