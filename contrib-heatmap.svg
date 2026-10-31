@@ -73,7 +73,6 @@
 <text x="10" y="257" fill="#8b949e">Mon</text>
 <text x="10" y="289" fill="#8b949e">Wed</text>
 <text x="10" y="321" fill="#8b949e">Fri</text>
-<rect class="c" style="animation-delay:0.044s" x="46" y="294" width="13" height="13" rx="3" fill="#161b22"/>
 <rect class="c" style="animation-delay:0.055s" x="46" y="310" width="13" height="13" rx="3" fill="#161b22"/>
 <rect class="c" style="animation-delay:0.066s" x="46" y="326" width="13" height="13" rx="3" fill="#161b22"/>
 <rect class="c" style="animation-delay:0.011s" x="62" y="230" width="13" height="13" rx="3" fill="#161b22"/>
@@ -439,6 +438,7 @@
 <rect class="c" style="animation-delay:0.605s" x="878" y="278" width="13" height="13" rx="3" fill="#006d32"/>
 <rect class="c" style="animation-delay:0.616s" x="878" y="294" width="13" height="13" rx="3" fill="#0e4429"/>
 <rect class="c" style="animation-delay:0.627s" x="878" y="310" width="13" height="13" rx="3" fill="#0e4429"/>
+<rect class="c" style="animation-delay:0.638s" x="878" y="326" width="13" height="13" rx="3" fill="#161b22"/>
 <text x="46" y="372" fill="#c9d1d9">396 submissions in the last year · 106 solved (37 Easy · 63 Medium · 6 Hard)</text>
 <text x="696" y="372" fill="#8b949e">Less</text>
 <rect x="736" y="361" width="13" height="13" rx="3" fill="#161b22"/>
