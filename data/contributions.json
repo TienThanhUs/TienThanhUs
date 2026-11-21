@@ -1,19 +1,19 @@
 {
  "username": "23F9oGHWpJ",
- "fetched_at": "2026-11-20T20:26:18+00:00",
- "total": 462,
- "total_active_days": 103,
+ "fetched_at": "2026-11-21T07:15:41+00:00",
+ "total": 463,
+ "total_active_days": 104,
  "best_day": {
   "date": "2026-06-14",
   "count": 21
  },
- "current_streak": 28,
- "longest_streak": 28,
+ "current_streak": 29,
+ "longest_streak": 29,
  "problems": {
   "all": {
    "solved": 118,
    "total": 4115,
-   "submissions": 337
+   "submissions": 338
   },
   "easy": {
    "solved": 45,
@@ -28,7 +28,7 @@
   "hard": {
    "solved": 6,
    "total": 991,
-   "submissions": 38
+   "submissions": 39
   }
  },
  "monthly": {
@@ -44,14 +44,9 @@
   "2026-08": 0,
   "2026-09": 42,
   "2026-10": 82,
-  "2026-11": 61
+  "2026-11": 62
  },
  "days": [
-  {
-   "date": "2025-11-20",
-   "count": 0,
-   "level": 0
-  },
   {
    "date": "2025-11-21",
    "count": 0,
@@ -1875,6 +1870,11 @@
   {
    "date": "2026-11-20",
    "count": 2,
+   "level": 1
+  },
+  {
+   "date": "2026-11-21",
+   "count": 1,
    "level": 1
   }
  ]
